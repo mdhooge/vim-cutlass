@@ -1,5 +1,5 @@
 
-<img align="left" width="155" height="420" src="https://i.imgur.com/30weJjp.png">
+<img align="left" width="122" height="420" src="https://i.imgur.com/30weJjp.png">
 
 ## Cutlass.vim
 

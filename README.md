@@ -1,5 +1,7 @@
 
-# Cutlass.vim
+## Cutlass.vim
+
+<img align="right" width="400" height="400" src="https://i.imgur.com/gT4QY7Z.png">
 
 Based off of [vim-easyclip](https://github.com/svermeulen/vim-easyclip) and also [Drew Neil's ideas](https://github.com/nelstrom/vim-cutlass) (as well as the name)
 

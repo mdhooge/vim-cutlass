@@ -1,6 +1,4 @@
-
 <img align="left" width="122" height="420" src="https://i.imgur.com/30weJjp.png">
-
 ## Cutlass
 
 Very simple plugin that just overrides bindings for delete and change operations to not affect the clipboard.

@@ -1,33 +1,4 @@
 
-let s:activeRegister = ''
-
-function! cutlass#preMoveMotion()
-    let s:activeRegister = v:register
-endfunction
-
-" Based off the example in `:h map-operator`
-function! cutlass#MoveMotion(type)
-
-    let previousSelection = &selection
-    let &selection = "inclusive"
-
-    if a:type == 'visual'
-        let selectChars = "gv"
-    elseif a:type == 'line'
-        let selectChars = "'[V']"
-    elseif a:type == 'char'
-        let selectChars = "`[v`]"
-    else
-        throw "assert"
-    endif
-
-    silent exe "normal! " . selectChars . "\"" . s:activeRegister . "y"
-    " The same select method should work both times
-    silent exe "normal! " . selectChars . "\"_d"
-
-    let &selection = previousSelection
-endfunction
-
 function! cutlass#overrideSelectBindings()
     let i = 33
 

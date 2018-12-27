@@ -1,18 +1,37 @@
 
 <img align="left" width="122" height="420" src="https://i.imgur.com/30weJjp.png">
 
-## Cutlass.vim
+## Cutlass
+
+Very simple plugin that just overrides bindings for delete and change operations to not affect the clipboard.
+
+The following keys are overridden to always use the black hole register:  `c`, `cc`, `C`, `s`, `S`, `d`, `dd`, `D`, `x`, `X`.
+
+All of these operations now simply delete and do not affect the current yank.
+
+You will almost certainly want to define a new key for 'cut', which you can do for example by adding the following to your .vimrc:
+
+```
+nnoremap m d
+xnoremap m d
+onoremap m d
+
+nnoremap mm dd
+nnoremap M D
+```
+
+Or you might want to use the 'x' key:
+
+```
+nnoremap x d
+xnoremap x d
+onoremap x d
+
+nnoremap xx dd
+nnoremap X D
+```
+
+## Credits
 
 Based off of [vim-easyclip](https://github.com/svermeulen/vim-easyclip) and also [Drew Neil's ideas](https://github.com/nelstrom/vim-cutlass) (as well as the name)
-
-Just like easyclip, it will override all the delete and change operations to not affect the current yank.  Then it adds a new motion 'cut'.  However the cut operator is not assigned by default so you need to add it to your config like in the example below.
-
-# Example config:
-
-```
-nmap x <plug>(CutlassCutMotion)
-vmap x <plug>(CutlassCutMotion)
-nmap X <plug>(CutlassCutToEndOfLineMotion)
-nmap xx <plug>(CutlassCutLine)
-```
 

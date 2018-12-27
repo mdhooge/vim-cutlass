@@ -1,6 +1,6 @@
 <img align="left" width="122" height="420" src="https://i.imgur.com/30weJjp.png">
 
-## Cutlass
+# Cutlass.vim
 
 Very simple plugin that just overrides the delete operations to not affect the current yank.
 
@@ -25,6 +25,10 @@ xnoremap x d
 nnoremap xx dd
 nnoremap X D
 ```
+
+## Why would you want to do this?
+
+See [here](http://vimcasts.org/blog/2013/11/registers-the-good-the-bad-and-the-ugly-parts/)
 
 ## Credits
 

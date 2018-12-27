@@ -14,18 +14,16 @@ You will almost certainly want to define a new key for 'cut', which you can do f
 ```
 nnoremap m d
 xnoremap m d
-onoremap m d
 
 nnoremap mm dd
 nnoremap M D
 ```
 
-Or you might want to use the 'x' key:
+'m' here can be thought of as 'move'.  Or you might want to use the 'x' key:
 
 ```
 nnoremap x d
 xnoremap x d
-onoremap x d
 
 nnoremap xx dd
 nnoremap X D

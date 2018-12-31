@@ -35,6 +35,10 @@ function! cutlass#addWeakMapping(left, right, modes, ...)
     endfor
 endfunction
 
+function! cutlass#getVersion()
+    return "1.0"
+endfunction
+
 function! cutlass#overrideDeleteAndChangeBindings()
     let bindings =
     \ [

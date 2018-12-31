@@ -30,6 +30,8 @@ nnoremap X D
 
 See [here](http://vimcasts.org/blog/2013/11/registers-the-good-the-bad-and-the-ugly-parts/)
 
+You might also consider installing [vim-yoink](https://github.com/svermeulen/vim-yoink) which contains other clipboard related improvements mentioned in this article.
+
 ## Credits
 
 Based off of [vim-easyclip](https://github.com/svermeulen/vim-easyclip) and also [Drew Neil's ideas](https://github.com/nelstrom/vim-cutlass) (as well as the name)

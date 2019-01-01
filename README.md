@@ -8,7 +8,7 @@ It achieves this by overriding the following keys to always use the black hole r
 
 After including this plugin, all of these operations will simply delete and not cut.  However, you will still want to have a key for 'cut', which you can add by including the following to your .vimrc:
 
-```
+```viml
 nnoremap m d
 xnoremap m d
 
@@ -18,7 +18,7 @@ nnoremap M D
 
 `m` here can be thought of as 'move'.  Note that you will be shadowing the 'add mark' key if you go with this binding.  Or you might want to use the `x` key instead:
 
-```
+```viml
 nnoremap x d
 xnoremap x d
 

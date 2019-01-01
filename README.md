@@ -16,7 +16,7 @@ nnoremap mm dd
 nnoremap M D
 ```
 
-'m' here can be thought of as 'move'.  Or you might want to use the 'x' key instead:
+'m' here can be thought of as 'move'.  Note that you will be shadowing the 'add mark' key if you go with this binding.  Or you might want to use the 'x' key instead:
 
 ```
 nnoremap x d
@@ -25,6 +25,8 @@ xnoremap x d
 nnoremap xx dd
 nnoremap X D
 ```
+
+And then use `dl` instead of `x` every time you want to delete a single character.  You might also consider using `s` with [vim-subversive](https://github.com/svermeulen/vim-subversive) and then using `cl` as a replacement in the same way.
 
 ## Why would you want to do this?
 

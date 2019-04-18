@@ -47,8 +47,9 @@ function! cutlass#overrideDeleteAndChangeBindings()
     \   ['C', '"_C', 'nx'],
     \   ['s', '"_s', 'nx'],
     \   ['S', '"_S', 'nx'],
-    \   ['x', '"_x', 'nx'],
-    \   ['X', '"_X', 'nx'],
+    \   ['x', '"_d', 'nx'],
+    \   ['xx','"_dd','nx'],
+    \   ['X', '"_D', 'nx'],
     \ ]
 
     for binding in bindings

@@ -43,12 +43,12 @@ function! cutlass#overrideDeleteAndChangeBindings()
     let bindings =
     \ [
     \   ['c', '"_c', 'nx'],
-    \   ['cc', '"_S', 'n'],
+    \   ['cc', '"_S','n' ],
     \   ['C', '"_C', 'nx'],
     \   ['s', '"_s', 'nx'],
     \   ['S', '"_S', 'nx'],
     \   ['x', '"_d', 'nx'],
-    \   ['xx','"_dd','nx'],
+    \   ['xx','"_dd','n' ],
     \   ['X', '"_D', 'nx'],
     \ ]
 
